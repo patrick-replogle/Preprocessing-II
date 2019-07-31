@@ -4,9 +4,19 @@
     width: 100%;
     border-bottom: 2px dashed silver;
 
+    @media @mobile {
+      width: 85%;
+      margin-left: 8%;
+    }
+
     img {
       width: 100%;
       margin: 0 0 15px 0;
+
+      @media @mobile {
+        width: 100%;
+        align-items: center;
+      }
     }
 
     p {
@@ -20,16 +30,32 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media @mobile {
+      .flex-column();
+    }
+
    
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        .flex-column();
+        width: 85%;
+        margin-left: 8%;
+        margin-right: 4%;
+        margin-bottom: 10px;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      
+      @media @mobile {
+        width: 100%;
+        margin-left: 8%;
+      }
 
       img {
         border-radius: 10px;
@@ -41,14 +67,29 @@
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+    @media @mobile {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+
+      @media @mobile {
+        width: 85%;
+      }
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media @mobile {
+        margin-top: 15px;
+        margin-bottom: 5px;
+        width: 100%;
+      }
     }
   }
 
@@ -56,8 +97,17 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @mobile {
+      .flex-column();
+      width: 85%;
+    }
+
     img {
       border-radius: 10px;
+
+      @media @mobile {
+        width: 100%;
+      }
     }
   }
 
@@ -67,9 +117,45 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      .flex-column();
+      justify-content: center;
+      align-content: space-around;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: space-around;
+        width: 85%;
+        margin: 10px 0 0 12%;
+      } 
     }
+
+    .btn {
+      .btn-mixin(@eastern-blue, @white);
+      border: none;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 1.6rem;
+      width: 90%;
+      border-radius: 12px;
+
+      @media @mobile {
+        margin: 5px 0 20px 0;
+      }
+  
+      &:hover {
+        background-color: darken(@eastern-blue, 10%);
+        color: darken(@white, 10%);
+      }
+    } 
   }
 }// home
