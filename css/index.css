@@ -184,8 +184,9 @@ img {
   }
 }
 .top-section h1 {
-  width: 40%;
-  margin-top: 10px;
+  width: 50%;
+  margin-bottom: 20px;
+  margin-left: 10%;
 }
 @media (max-width: 500px) {
   .top-section h1 {
@@ -196,12 +197,15 @@ img {
 .top-section .nav {
   display: flex;
   align-content: space-between;
-  width: 30%;
-  margin: 0;
+  width: 35%;
+  margin-bottom: 20px;
+  margin-left: 10%;
 }
 @media (max-width: 500px) {
   .top-section .nav {
     justify-content: center;
+    margin-right: 10%;
+    margin-bottom: 10px;
   }
 }
 .top-section .nav a {
@@ -209,7 +213,7 @@ img {
   font-family: 'Roboto', sans-serif;
   color: #212529;
   font-size: 1.8rem;
-  margin-left: 0;
+  margin-right: 3%;
 }
 @media (max-width: 500px) {
   .top-section .nav a {
