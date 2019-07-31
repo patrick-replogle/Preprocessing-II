@@ -190,7 +190,7 @@ img {
 }
 @media (max-width: 500px) {
   .top-section h1 {
-    margin-left: 10%;
+    margin-left: 18%;
     margin-bottom: 10px;
   }
 }
@@ -294,6 +294,11 @@ img {
 .home .content-section .img-content img {
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .home .content-section .img-content img {
+    width: 85%;
+  }
+}
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
@@ -341,6 +346,7 @@ img {
 @media (max-width: 500px) {
   .home .content-destination img {
     width: 100%;
+    border-top: 5px;
   }
 }
 .home .content-pick {
@@ -368,7 +374,8 @@ img {
     justify-content: center;
     align-content: space-around;
     width: 85%;
-    margin: 10px 0 0 12%;
+    margin-top: 10px;
+    margin-left: 10%;
   }
 }
 .home .content-pick .btn {
@@ -385,7 +392,8 @@ img {
 }
 @media (max-width: 500px) {
   .home .content-pick .btn {
-    margin: 5px 0 20px 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 }
 .home .content-pick .btn:hover {

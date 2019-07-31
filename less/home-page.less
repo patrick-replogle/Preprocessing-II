@@ -59,6 +59,10 @@
 
       img {
         border-radius: 10px;
+
+        @media @mobile {
+          width: 85%;
+        }
       }
     }
   }
@@ -107,6 +111,7 @@
 
       @media @mobile {
         width: 100%;
+        border-top: 5px;
       }
     }
   }
@@ -133,7 +138,9 @@
         justify-content: center;
         align-content: space-around;
         width: 85%;
-        margin: 10px 0 0 12%;
+        margin-top: 10px;
+        margin-left: 10%;
+        
       } 
     }
 
@@ -149,7 +156,8 @@
       border-radius: 12px;
 
       @media @mobile {
-        margin: 5px 0 20px 0;
+        margin-top: 5px;
+        margin-bottom: 5px;
       }
   
       &:hover {
